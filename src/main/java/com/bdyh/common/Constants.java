@@ -1,0 +1,94 @@
+package com.bdyh.common;
+
+/**
+ * Created by zheng on 2017/1/9.
+ * 描述信息: 系统常量
+ */
+public interface Constants {
+
+    //验证码
+    String SESSION_VALIDATECODE = "SESSION_VALIDATECODE";//验证码
+    String JSESSIONID = "JSESSIONID";
+    String MESSAGE = "message";
+
+    //用户登录信息
+    String LOGIN_USER_NOT_EXIST = "LOGIN_USER_NOT_EXIST";//用户不存在
+    String LOGIN_USER_LOCK = "LOGIN_USER_LOCK";//用户被锁定
+    String LOGIN_USER_PASSWORD_WRONG = "LOGIN_USER_PASSWORD_WRONG";//用户密码错误
+    String LOGIN_USER_IDENTIFY_WRONG = "LOGIN_USER_IDENTIFY_WRONG";//用户验证码错误
+    String LOGIN_USER_SUCCESS = "LOGIN_USER_SUCCESS";//用户登录成功,用户要求重置密码发送成功
+    String LOGIN_NEED = "LOGIN_NEED"; //没有登录
+
+    //用户session信息
+    String LOGIN_SESSION_USER_ID = "LOGIN_SESSION_USER_ID";//用户id
+    String LOGIN_SESSION_USER_NAME = "LOGIN_SESSION_USER_NAME";//用户名
+    String LOGIN_SESSION_USER_PHOTO = "LOGIN_SESSION_USER_PHOTO";//用户头像
+    String LOGIN_SESSION_USER_ACCOUNT = "LOGIN_SESSION_USER_ACCOUNT";//用户头像
+    String LOGIN_SESSION_USER_CHECK_CODE = "LOGIN_SESSION_USER_CHECK_CODE";//用户校验码
+
+    //用户登录失败信息记录
+    String LOGIN_USER_ERROR_NUM = "LOGIN_USER_ERROR_NUM"; //错误登录数
+    String LOGIN_USER_PASSWORD_ERROR_NUM = "LOGIN_USER_PASSWORD_ERROR_NUM"; //密码错误登录数
+
+    Integer LOGIN_USER_ERROR_MAX = 6;
+
+    //用户重置密码校验
+    String LOGIN_RESETPASSWORD_SUCCESS = "LOGIN_RESETPASSWORD_SUCCESS";
+
+    //用户信息
+    String SESSION_USER = "SESSION_USER";
+
+    //page对象
+    String PAGE_KEY = "page";
+    String PARAM = "param";
+
+    /**
+     * 返回结果
+     * RESULT_SUCCESS：成功
+     * RESULT_FAILED：失败
+     * RESULT_PARAMETER_ERROR：参数错误
+     */
+    String DATA = "data";
+    String RESULT = "result";
+    String RESULT_SUCCESS = "RESULT_SUCCESS";
+    String RESULT_FAILED = "RESULT_FAILED";
+    String REGISTER_FAILED = "REGISTER_FAILED";
+    String ACCOUNT_ERROR = "ACCOUNT_ERROR";
+    String ACCOUNT_EXIST = "ACCOUNT_EXIST";
+    String ACCOUNT_NOT_EXIST = "ACCOUNT_NOT_EXIST";
+    String PASSWORD_ERROR = "PASSWORD_ERROR";
+    String PASSWORD_UNAVAILABLE = "PASSWORD_UNAVAILABLE";
+    String PASSWORD_NOT_EQUALS = "PASSWORD_NOT_EQUALS";
+    String UNAVAILABLE_EMAIL = "UNAVAILABLE_EMAIL";
+    String EMAIL_EXIST = "EMAIL_EXIST";
+    String REALNAME_ERROR = "REALNAME_ERROR";
+    String NAME_ERROR = "NAME_ERROR";
+    String COMPANY_ERROR = "COMPANY_ERROR";
+    String CARDID_ERROR = "CARDID_ERROR";
+    String SOCIETIES_ERROR = "SOCIETIES_ERROR";
+    String CODE_ERROR = "CODE_ERROR";
+    String TEL_ERROR = "TEL_ERROR";
+    String TEL_EXIST = "TEL_EXIST";
+    String UPDATE_FAILED = "UPDATE_FAILED";
+    String RESULT_EXIST = "RESULT_EXIST";
+    String RESULT_PARAMETER_ERROR = "RESULT_PARAMETER_ERROR";
+    String RESULT_CHART_NOT_EXIST = "RESULT_CHART_NOT_EXIST";
+    String ELASTICSEARCH_ERROR = "ELASTICSEARCH_ERROR";
+    String MENUCACHE_ERROR = "MENUCACHE_ERROR";
+    String MAXID_ERROR = "MAXID_ERROR";
+
+    String XSS_ATTACK = "XSS_ATTACK";
+    String USER_EXIST = "USER_EXIST";
+    String USER_NOT_EXIST = "USER_NOT_EXIST";
+    String EMAIL_CODE = "EMAIL_CODE";
+    String PARAM_ERROR = "PARAM_ERROR";
+    Integer PAGE_MAX_SIZE = 100;
+    Integer PAGE_START_NUM = 50000;
+    String  VERIFY_CODE="VERIFY_CODE";
+
+    String PERMISSION_ALLOW = "PERMISSION_ALLOW";
+
+    Integer CALL_COUNTER = 10000;
+
+
+}

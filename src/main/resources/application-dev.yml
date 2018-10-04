@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/bdyh_verify?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+server:
+  port: 8016
+  max-http-header-size: 10000000
+system:
+    path:
+      pictureSourceMax: F:/verify/source/targets/
+      pictureSourceSm: F:/verify/source/templates/
+      pictureOutput: F:/verify/temp/
+      url: http://127.0.0.1:8018/
